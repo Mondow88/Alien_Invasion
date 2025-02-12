@@ -10,6 +10,7 @@ from time import time
 from game_stats import GameStats
 from random import randint
 
+# create a game that is different from Crash Course
 class AlienInvasion:
     def __init__(self):
         # pygame.init() is mandatory to use pygame lib
