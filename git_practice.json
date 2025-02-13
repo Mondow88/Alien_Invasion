@@ -1,0 +1,4 @@
+# force commit local branch to remote
+# !!! this will overwrite remote branch
+# used only while remote modificaion is unwanted before local modification
+git push origin main --force
