@@ -2,3 +2,15 @@
 # !!! this will overwrite remote branch
 # used only while remote modificaion is unwanted before local modification
 git push origin main --force
+
+# check current remote repository
+git remote -v
+
+# relocate commit repository
+git remote set-url origin https://...git
+
+# add origin
+git remote add origin https://...git
+
+# push
+git push
