@@ -7,7 +7,7 @@ class Settings:
         # default screen resolution
         self.screen_res = (1200,800)
         # default screen background color
-        self.bg_color = (230,230,230)
+        self.bg_color = (200,200,230)
         # -------------------------------
 
         # bullet settings
@@ -35,9 +35,9 @@ class Settings:
         # alien speed in x
         self.alien_speed_x = uniform(1.0, 2.5)
         # alien speed in y
-        self.alien_speed_y = 5.5
+        self.alien_speed_y = 1.5
         # fleet drop speed
-        self.fleet_drop_speed = 30.0
+        self.fleet_drop_speed = 1.0
         # alien fleet direction
         self.fleet_direction = 1
         # ship alowed hits

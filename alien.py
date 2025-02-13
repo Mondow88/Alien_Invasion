@@ -15,6 +15,9 @@ class Alien(Sprite):
         self.image = pygame.image.load('alien.bmp')
         # acquire alien rect from image
         self.rect = self.image.get_rect()
+        # remove ship background by colro
+        # beaware, this will also remove other pixa with the same colro
+        self.image.set_colorkey((230, 230, 230))
         # calculate initial alien position
         # initial position is generated randomly in x axle
         self.rect.x = randint(0, self.screen.get_rect().width - self.rect.width)

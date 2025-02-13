@@ -16,6 +16,9 @@ class Ship():
         # acquire image rectangular
         # .get_rect() is a method of Surface
         self.rect = self.image.get_rect()
+        # remove ship background by colro
+        # beaware, this will also remove other pixa with the same colro
+        self.image.set_colorkey((230, 230, 230))
 
         # place new ship in the bottom of window
         self.rect.midbottom = self.screen_rect.midbottom
@@ -33,6 +36,7 @@ class Ship():
         self.x = float(self.rect.x)
         self.ship_speed = ai_game.settings.ship_speed
 
+    # define method that updates ship position
     def update(self):
         # whiel moving right flat is true and ship is within right boarder
         if  self.moving_right and self.rect.right < self.screen_rect.right:
