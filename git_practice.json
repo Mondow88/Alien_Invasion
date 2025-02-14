@@ -14,3 +14,6 @@ git remote add origin https://...git
 
 # push
 git push
+
+# set remote upstream
+git push --set-upstream origin main
